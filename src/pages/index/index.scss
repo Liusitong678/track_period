@@ -1,0 +1,26 @@
+.homepage {
+    padding: 30rpx;
+    background-color: #FFC2BF;
+    min-height: 100vh;
+  
+    .logo-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 60rpx 0 40rpx 0;
+  
+      .logo {
+        width: 82rpx;
+        height: 82rpx;
+        margin-bottom: 10rpx;
+      }
+  
+      .title {
+        font-size: 32rpx;
+        color: #fff;
+        margin-top: 10rpx;
+      }
+    }
+  }
+  

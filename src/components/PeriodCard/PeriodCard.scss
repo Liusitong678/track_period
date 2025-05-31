@@ -1,0 +1,125 @@
+.period-card {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-row-gap: 20rpx;
+  background-color: #fff0f3;
+  background-image: url('~@/assets/model1_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30rpx;
+  padding: 40rpx;
+  padding-bottom: 20rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+  margin-bottom: 40rpx;
+
+  .header {
+    width: 88%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin: 0 auto;
+
+    .subtitle {
+      font-size: 28rpx;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .setting {
+      font-size: 24rpx;
+      background-color: #E0EDFA;
+      border: 1px solid #B0D9FF;
+      border-radius: 20rpx;
+      padding: 12rpx 42rpx;
+      color: #555;
+    }
+  }
+
+  .circle {
+    display: grid;
+    place-items: center;
+    width: 240rpx;
+    height: 240rpx;
+    border-radius: 50%;
+    background-color: #E0EDFA;
+    color: #679fd4;
+    border: 13px solid #E9F4FF;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 15rpx;
+
+    &.normal {
+      background-color: #E0EDFA;
+      color: #679fd4;
+      border: 13px solid #E9F4FF;
+    }
+
+    &.period {
+      background-color: #FEA69C;
+      border: 13px solid #FFC7C1;
+      color: white;
+    }
+
+    &.ovulation {
+      background-color: #FFEFCA;
+      border: 13px solid #FFF5E4;
+      color: #FEA69C;
+    }
+
+    .day {
+      font-size: 50rpx;
+      // font-weight: bold;
+      position: absolute;
+      top: 25%;
+    }
+
+    .status-text {
+      font-size: 28rpx;
+      position: absolute;
+      bottom: 23%;
+    }
+  }
+  
+  .start-btn {
+    background-color: #FEA69C;
+    color: white;
+    font-size: 28rpx;
+    padding: 18rpx 0;
+    border-radius: 38rpx;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.15);
+  }
+}
+
+.info_card{
+  background-color: #FFFDF6;
+  border-radius: 30rpx;
+  padding: 10rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+  margin-bottom: 40rpx;
+  font-size: 28rpx;
+  .info {
+    color: #555;
+    line-height: 34rpx;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: 20rpx;
+    margin-top: 10rpx;
+    .start_period{
+      // color: #fff;
+      display: grid;
+      // grid-template-rows: 1fr 1fr 1fr 1fr;
+      // background-color: #fbd7d2;
+      justify-content: center;
+      border-radius: 30rpx;
+      gap: 20rpx;
+      width: 80%;
+      padding: 20rpx 0;
+    }
+  }
+}
+

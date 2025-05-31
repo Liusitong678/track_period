@@ -1,4 +1,6 @@
 import { defineConfig } from '@tarojs/cli'
+const path = require('path')
+
 
 import devConfig from './dev'
 import prodConfig from './prod'
@@ -47,6 +49,9 @@ export default defineConfig(async (merge, { command, mode }) => {
           }
         }
       }
+    },
+    alias: {
+      '@': path.resolve(__dirname, '..', 'src')  // ✅ 添加这一行
     },
     h5: {
       publicPath: '/',

@@ -1,47 +1,25 @@
-import { Component } from 'react'
-import { View, Button, Text } from '@tarojs/components'
-import { observer, inject } from 'mobx-react'
-
+import React from 'react'
+import { View, Image, Text } from '@tarojs/components'
+import PeriodCard from '@/components/PeriodCard/PeriodCard'
+import CalendarSection from '@/components/CalendarSection/CalendarSection'
+import logo from '@/assets/logo.png' // 使用 alias 或相对路径
 import './index.scss'
 
-
-@inject('store')
-@observer
-class Index extends Component {
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
-
-  increment = () => {
-    const { counterStore } = this.props.store
-    counterStore.increment()
-  }
-
-  decrement = () => {
-    const { counterStore } = this.props.store
-    counterStore.decrement()
-  }
-
-  incrementAsync = () => {
-    const { counterStore } = this.props.store
-    counterStore.incrementAsync()
-  }
-
-  render () {
-    const { counterStore: { counter } } = this.props.store
-    return (
-      <View className='index'>
-        <Button onClick={this.increment}>+</Button>
-        <Button onClick={this.decrement}>-</Button>
-        <Button onClick={this.incrementAsync}>Add Async</Button>
-        <Text>{counter}</Text>
+export default function Index() {
+  return (
+    <View className="homepage">
+      <View className="logo-bar">
+        <Image src={logo} mode="aspectFit" className='logo' />
+        <Text className="title">月潮period</Text>
       </View>
-    )
-  }
-}
 
-export default Index
+      {/* 顶部周期显示模块 */}
+      <PeriodCard />
+
+      {/* 后续模块可继续添加 */}
+      <CalendarSection />
+      {/* <MoodCard /> */}
+      {/* <SymptomCard /> */}
+    </View>
+  )
+}

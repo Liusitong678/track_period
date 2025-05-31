@@ -1,0 +1,33 @@
+// 通用表单外层容器（可选）
+.form-group {
+    margin-bottom: 16px;
+  }
+  
+  // Label 样式
+  label,
+  .label {
+    display: block;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 6px;
+  }
+  
+  // Input 样式
+  input,
+  .input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+  
+    &:focus {
+      border-color: #ff8fa1;
+      outline: none;
+      box-shadow: 0 0 4px rgba(255, 143, 161, 0.3);
+    }
+  }
+  

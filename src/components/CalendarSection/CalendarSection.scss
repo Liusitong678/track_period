@@ -1,0 +1,104 @@
+.calendar-section {
+    background: #F1F5FE;
+    border-radius: 30rpx;
+    padding: 38rpx;
+  
+    .header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 25rpx;
+  
+        .icon {
+            width: 130rpx;
+            height: 130rpx;
+            border-radius: 50%;
+            background-color: #CCE7FB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            Image {
+                width: 85rpx;
+                height: 85rpx
+            }
+        }
+  
+      .history-select {
+        display: flex;
+        align-items: center;
+        border-radius: 30rpx;
+        border: 3rpx solid #fff;
+        overflow: hidden;
+        background-color: #F7F9FF;
+        box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.05);
+        margin: 40rpx auto;
+        width: 380rpx;
+        max-width: 500rpx;
+      
+        .picker-btn {
+          flex: 1;
+          text-align: center;
+          padding: 20rpx 0;
+          font-size: 26rpx;
+          color: #555;
+          width: 230rpx;
+          background-color: #F7F9FF;
+        // background-color: #fff;
+        }
+      
+        .go-btn {
+          border: none;
+          border-radius: 0; // 防止小程序默认圆角
+          width: 120rpx;
+          font-size: 26rpx;
+          background-color: #edf4fb;
+          color: #7C9DB7;
+          padding: 0 24rpx;
+          height: 100%; // 与左侧保持一致高度
+          line-height: 80rpx; // 或等于 picker-btn 的高度
+          text-align: center;
+        }
+      }
+      
+    }
+  
+    .calendar-grid {
+      margin-top: 12rpx;
+      background-color: #FFFDF6;
+      padding: 16rpx;
+      border-radius: 30rpx;
+
+      .calendar-title {
+        margin: 12rpx;
+        color: #555;
+        font-size: 26rpx;
+      }
+  
+      .weekdays, .days {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8rpx;
+      }
+  
+      .weekday, .day {
+        flex: 1;
+        text-align: center;
+      }
+  
+      .day.period {
+        background: #fbb;
+        border-radius: 50%;
+        padding: 6rpx 0;
+      }
+    }
+
+    // .at-calendar__mark {
+    // background-color: pink !important;  /* 粉色圆圈 */
+    // width: 10px;
+    // height: 10px;
+    // border-radius: 50%;
+    // margin: 0 auto;
+    // }
+  }
+  
