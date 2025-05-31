@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { View, Text, Input, Button } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import { addRecord } from '@/api'
-import MonthDisplay from '@/components/MonthDisplay/MonthDisplay'
+import MonthCard from '@/components/MonthCard/MonthCard'
 
 export default function SettingsPage() {
   const [startDate, setStartDate] = useState('')
@@ -12,7 +12,7 @@ export default function SettingsPage() {
   const [symptoms, setSymptoms] = useState('')
   const [note, setNote] = useState('')
 
-  // 用于 MonthDisplay 的当前年月显示
+  // 用于 MonthCard 的当前年月显示
   const [year, setYear] = useState('')
   const [monthEn, setMonthEn] = useState('')
   const [monthCn, setMonthCn] = useState('')
@@ -55,7 +55,7 @@ export default function SettingsPage() {
 
   return (
     <View className="settings-page">
-      <MonthDisplay year={year} monthEn={monthEn} monthCn={monthCn} />
+      <MonthCard year={year} monthEn={monthEn} monthCn={monthCn} />
 
       <View className="form">
         <Input placeholder="开始日期" onInput={(e) => setStartDate(e.detail.value)} />

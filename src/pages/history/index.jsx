@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { View, Text, Image } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import datanull from '@/assets/datanull.png'
-import MonthDisplay from '@/components/MonthDisplay/MonthDisplay'
+import MonthCard from '@/components/MonthCard/MonthCard'
 import './index.scss'
 
 export default function HistoryPage() {
@@ -46,7 +46,7 @@ export default function HistoryPage() {
 
   return (
     <View className="history-page">
-      <MonthDisplay year={year} monthEn={monthEn} monthCn={monthCn} />
+      <MonthCard year={year} monthEn={monthEn} monthCn={monthCn} />
 
       {record ? (
         <View className="record-card">

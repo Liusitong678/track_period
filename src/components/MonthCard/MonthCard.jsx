@@ -1,10 +1,10 @@
-// src/components/MonthDisplay/MonthDisplay.jsx
+// src/components/MonthCard/MonthCard.jsx
 import React from 'react'
 import { View, Text, Image } from '@tarojs/components'
 import logo from '@/assets/logo.png'
-import './MonthDisplay.scss'
+import './MonthCard.scss'
 
-export default function MonthDisplay({ year, monthEn, monthCn }) {
+export default function MonthCard({ year, monthEn, monthCn }) {
   return (
     <View className='month_module'>
       <View className="logo-bar">
